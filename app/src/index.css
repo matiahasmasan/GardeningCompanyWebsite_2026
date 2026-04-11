@@ -1,13 +1,21 @@
 @import "tailwindcss";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
+@theme {
+  --color-primary: #2f5233;
+  --color-secondary: #4a7c59;
+  --color-accent: #8fb996;
+  --color-light: #e8f5e8;
+  --color-dark: #1a2f1d;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
