@@ -1,56 +1,56 @@
-import { Link } from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const services = [
   {
-    icon: 'fas fa-seedling',
-    title: 'Amenajare Grădini',
-    desc: 'Proiectare peisagistică și crearea de spații verzi moderne și funcționale, adaptate stilului tău de viață.',
+    icon: "fas fa-seedling",
+    title: "Amenajare Grădini",
+    desc: "Proiectare peisagistică și crearea de spații verzi moderne și funcționale, adaptate stilului tău de viață.",
   },
   {
-    icon: 'fas fa-tree',
-    title: 'Toaletare Copaci',
-    desc: 'Îngrijire profesională pentru copaci și arbuști ornamentali, inclusiv curățarea pomilor fructiferi.',
+    icon: "fas fa-tree",
+    title: "Toaletare Copaci",
+    desc: "Îngrijire profesională pentru copaci și arbuști ornamentali, inclusiv curățarea pomilor fructiferi.",
   },
   {
-    icon: 'fas fa-tint',
-    title: 'Sisteme de Irigații',
-    desc: 'Montaj și întreținere de sisteme automate de udare, pentru o grădină mereu verde și sănătoasă.',
+    icon: "fas fa-tint",
+    title: "Sisteme de Irigații",
+    desc: "Montaj și întreținere de sisteme automate de udare, pentru o grădină mereu verde și sănătoasă.",
   },
   {
-    icon: 'fas fa-water',
-    title: 'Canalizări & Drenaje',
-    desc: 'Soluții pentru instalații de apă, drenaje și canalizări, esențiale pentru întreținerea grădinilor.',
+    icon: "fas fa-water",
+    title: "Canalizări & Drenaje",
+    desc: "Soluții pentru instalații de apă, drenaje și canalizări, esențiale pentru întreținerea grădinilor.",
   },
   {
-    icon: 'fas fa-leaf',
-    title: 'Gazon Rulou',
-    desc: 'Montaj rapid de gazon rulou și servicii de întreținere pentru un spațiu verde impecabil.',
+    icon: "fas fa-leaf",
+    title: "Gazon Rulou",
+    desc: "Montaj rapid de gazon rulou și servicii de întreținere pentru un spațiu verde impecabil.",
   },
   {
-    icon: 'fas fa-truck',
-    title: 'Transport & Excavator',
-    desc: 'Transport materiale și săpături cu excavatorul, ideale pentru proiecte de construcții și grădinărit.',
+    icon: "fas fa-truck",
+    title: "Transport & Excavator",
+    desc: "Transport materiale și săpături cu excavatorul, ideale pentru proiecte de construcții și grădinărit.",
   },
   {
-    icon: 'fas fa-shield-alt',
-    title: 'Tratamente Plante',
-    desc: 'Fungicide, pesticide și insecticide pentru prevenirea și tratarea bolilor plantelor.',
+    icon: "fas fa-shield-alt",
+    title: "Tratamente Plante",
+    desc: "Fungicide, pesticide și insecticide pentru prevenirea și tratarea bolilor plantelor.",
   },
   {
-    icon: 'fas fa-cut',
-    title: 'Defrișări & Curățenie',
-    desc: 'Servicii complete de defrișare, curățare terenuri și dezăpezire, precum și lucrări agricole (arat, frezat).',
+    icon: "fas fa-cut",
+    title: "Defrișări & Curățenie",
+    desc: "Servicii complete de defrișare, curățare terenuri și dezăpezire, precum și lucrări agricole (arat, frezat).",
   },
-]
+];
 
 const aboutImages = [
-  { src: '/images/about-1.jpg', alt: 'Proiect amenajare grădină' },
-  { src: '/images/about-2.jpg', alt: 'Grădină cu palmieri' },
-  { src: '/images/about-3.jpg', alt: 'Amenajare peisagistică' },
-  { src: '/images/about-4.jpg', alt: 'Piscină și grădină' },
-]
+  { src: "/images/about-1.jpg", alt: "Proiect amenajare grădină" },
+  { src: "/images/about-2.jpg", alt: "Grădină cu palmieri" },
+  { src: "/images/about-3.jpg", alt: "Amenajare peisagistică" },
+  { src: "/images/about-4.jpg", alt: "Piscină și grădină" },
+];
 
 export default function Home() {
   return (
@@ -60,7 +60,7 @@ export default function Home() {
         {/* Background */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+          style={{ backgroundImage: "url('/images/gradina1-1920.webp')" }}
         />
         <div className="absolute inset-0 bg-[#1a3a16]/70" />
 
@@ -78,7 +78,9 @@ export default function Home() {
           </h1>
 
           <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
-            Transformăm spațiile verzi din Maramureș în adevărate opere de artă peisagistică prin servicii profesionale de amenajare și întreținere grădini în Baia Mare și împrejurimi
+            Transformăm spațiile verzi din Maramureș în adevărate opere de artă
+            peisagistică prin servicii profesionale de amenajare și întreținere
+            grădini în Baia Mare și împrejurimi
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
@@ -101,9 +103,21 @@ export default function Home() {
           {/* Stats */}
           <div className="flex flex-wrap items-center justify-center gap-10 text-center">
             {[
-              { icon: 'fas fa-seedling', value: '300+', label: 'Proiecte Realizate' },
-              { icon: 'fas fa-users', value: '100+', label: 'Clienți Mulțumiți' },
-              { icon: 'fas fa-handshake', value: '5+', label: 'Parteneri de Încredere' },
+              {
+                icon: "fas fa-seedling",
+                value: "300+",
+                label: "Proiecte Realizate",
+              },
+              {
+                icon: "fas fa-users",
+                value: "100+",
+                label: "Clienți Mulțumiți",
+              },
+              {
+                icon: "fas fa-handshake",
+                value: "5+",
+                label: "Parteneri de Încredere",
+              },
             ].map(({ icon, value, label }) => (
               <div key={label} className="flex items-center gap-3">
                 <i className={`${icon} text-green-300 text-xl`}></i>
@@ -134,15 +148,21 @@ export default function Home() {
               Despre Noi
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5">
-              Peste 25 de Ani de{' '}
-              <span className="text-green-600">Experiență în</span>{' '}
-              Amenajare Grădini Maramureș
+              Peste 25 de Ani de{" "}
+              <span className="text-green-600">Experiență în</span> Amenajare
+              Grădini Maramureș
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              <strong>Gradina ZAK</strong> este o firmă cu experiență îndelungată în domeniul amenajării și întreținerii spațiilor verzi. Cu o echipă de specialiști dedicați, oferim servicii complete de <strong>peisagistică în Baia Mare</strong> și zonele limitrofe din județul <strong>Maramureș</strong>.
+              <strong>Gradina ZAK</strong> este o firmă cu experiență
+              îndelungată în domeniul amenajării și întreținerii spațiilor
+              verzi. Cu o echipă de specialiști dedicați, oferim servicii
+              complete de <strong>peisagistică în Baia Mare</strong> și zonele
+              limitrofe din județul <strong>Maramureș</strong>.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Fiecare proiect de <strong>amenajare grădină</strong> este abordat cu atenție la detalii și profesionalism, asigurându-ne că rezultatul final depășește așteptările clienților noștri.
+              Fiecare proiect de <strong>amenajare grădină</strong> este abordat
+              cu atenție la detalii și profesionalism, asigurându-ne că
+              rezultatul final depășește așteptările clienților noștri.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -167,14 +187,16 @@ export default function Home() {
             {aboutImages.map((img, i) => (
               <div
                 key={i}
-                className={`overflow-hidden rounded-xl bg-gray-100 ${i === 0 ? 'row-span-2' : ''}`}
-                style={{ minHeight: i === 0 ? '320px' : '150px' }}
+                className={`overflow-hidden rounded-xl bg-gray-100 ${i === 0 ? "row-span-2" : ""}`}
+                style={{ minHeight: i === 0 ? "320px" : "150px" }}
               >
                 <img
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-full object-cover"
-                  onError={(e) => { e.target.style.display = 'none' }}
+                  onError={(e) => {
+                    e.target.style.display = "none";
+                  }}
                 />
               </div>
             ))}
@@ -187,10 +209,17 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Serviciile Noastre de Amenajare și Întreținere Grădini în Maramureș
+              Serviciile Noastre de Amenajare și Întreținere Grădini în
+              Maramureș
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Descoperiți gama completă de servicii profesionale de <strong>peisagistică și întreținere spații verzi în Baia Mare și Maramureș</strong>. Oferim soluții complete pentru toate nevoile dumneavoastră de amenajare grădini.
+              Descoperiți gama completă de servicii profesionale de{" "}
+              <strong>
+                peisagistică și întreținere spații verzi în Baia Mare și
+                Maramureș
+              </strong>
+              . Oferim soluții complete pentru toate nevoile dumneavoastră de
+              amenajare grădini.
             </p>
             <div className="w-12 h-1 bg-green-600 mx-auto mt-6 rounded-full"></div>
           </div>
@@ -205,7 +234,9 @@ export default function Home() {
                   <i className={`${s.icon} text-green-600 text-xl`}></i>
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {s.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -229,7 +260,11 @@ export default function Home() {
             Gata să Îți Transformi Grădina?
           </h2>
           <p className="text-white/80 text-lg mb-8 leading-relaxed">
-            Contactează-ne astăzi pentru o <strong className="text-white">consultație gratuită de amenajare grădină</strong> și să discutăm despre visul tău de grădină perfectă
+            Contactează-ne astăzi pentru o{" "}
+            <strong className="text-white">
+              consultație gratuită de amenajare grădină
+            </strong>{" "}
+            și să discutăm despre visul tău de grădină perfectă
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -252,5 +287,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
