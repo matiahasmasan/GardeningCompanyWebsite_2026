@@ -12,11 +12,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close menu on route change
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
-
   const linkClass = (path) =>
     `text-sm font-medium transition-colors hover:text-white ${
       pathname === path ? "text-white" : "text-white/70"
@@ -32,7 +27,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 shrink-0">
+        <Link to="/" className="flex items-center gap-2 shrink-0" onClick={() => window.scrollTo(0, 0)}>
           <img
             src="/images/logo.jpg"
             alt="Gradina Zak"
@@ -51,13 +46,13 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/" className={linkClass("/")}>
+          <Link to="/" className={linkClass("/")} onClick={() => window.scrollTo(0, 0)}>
             Acasă
           </Link>
-          <Link to="/proiecte" className={linkClass("/proiecte")}>
+          <Link to="/proiecte" className={linkClass("/proiecte")} onClick={() => window.scrollTo(0, 0)}>
             Proiecte
           </Link>
-          <Link to="/contact" className={linkClass("/contact")}>
+          <Link to="/contact" className={linkClass("/contact")} onClick={() => window.scrollTo(0, 0)}>
             Contact
           </Link>
         </div>
@@ -93,13 +88,25 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col px-6 pb-4 gap-4 border-t border-white/10">
-          <Link to="/" className={`${linkClass("/")} pt-4`}>
+          <Link
+            to="/"
+            className={`${linkClass("/")} pt-4`}
+            onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}
+          >
             Acasă
           </Link>
-          <Link to="/proiecte" className={linkClass("/proiecte")}>
+          <Link
+            to="/proiecte"
+            className={linkClass("/proiecte")}
+            onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}
+          >
             Proiecte
           </Link>
-          <Link to="/contact" className={linkClass("/contact")}>
+          <Link
+            to="/contact"
+            className={linkClass("/contact")}
+            onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}
+          >
             Contact
           </Link>
         </div>

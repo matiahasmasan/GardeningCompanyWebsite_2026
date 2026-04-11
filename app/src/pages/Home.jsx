@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 const services = [
   {
@@ -46,10 +47,9 @@ const services = [
 ];
 
 const aboutImages = [
-  { src: "/images/about-1.jpg", alt: "Proiect amenajare grădină" },
-  { src: "/images/about-2.jpg", alt: "Grădină cu palmieri" },
-  { src: "/images/about-3.jpg", alt: "Amenajare peisagistică" },
-  { src: "/images/about-4.jpg", alt: "Piscină și grădină" },
+  { src: "/images/intretinere1.webp", alt: "Proiect amenajare grădină" },
+  { src: "/images/toaletare1.webp", alt: "Grădină cu palmieri" },
+  { src: "/images/gradina3-1200.webp", alt: "Amenajare peisagistică" },
 ];
 
 export default function Home() {
@@ -101,9 +101,21 @@ export default function Home() {
           {/* Stats */}
           <div className="flex flex-wrap items-center justify-center gap-10 text-center">
             {[
-              { icon: "fas fa-seedling", value: "300+", label: "Proiecte Realizate" },
-              { icon: "fas fa-users", value: "100+", label: "Clienți Mulțumiți" },
-              { icon: "fas fa-handshake", value: "5+", label: "Parteneri de Încredere" },
+              {
+                icon: "fas fa-seedling",
+                value: "300+",
+                label: "Proiecte Realizate",
+              },
+              {
+                icon: "fas fa-users",
+                value: "100+",
+                label: "Clienți Mulțumiți",
+              },
+              {
+                icon: "fas fa-handshake",
+                value: "5+",
+                label: "Parteneri de Încredere",
+              },
             ].map(({ icon, value, label }) => (
               <div key={label} className="flex items-center gap-3">
                 <i className={`${icon} text-accent text-xl`}></i>
@@ -117,15 +129,11 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-          <div className="w-6 h-9 border-2 border-white/40 rounded-full flex items-start justify-center pt-1.5">
-            <div className="w-1 h-2 bg-white/60 rounded-full"></div>
-          </div>
-        </div>
+        <ScrollIndicator targetId="about" />
       </section>
 
       {/* ── ABOUT ── */}
-      <section className="py-20 px-6 bg-white">
+      <section id="about" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-2 bg-light text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">
@@ -138,16 +146,16 @@ export default function Home() {
               Grădini Maramureș
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              <strong>Gradina ZAK</strong> este o firmă cu experiență îndelungată
-              în domeniul amenajării și întreținerii spațiilor verzi. Cu o echipă
-              de specialiști dedicați, oferim servicii complete de{" "}
-              <strong>peisagistică în Baia Mare</strong> și zonele limitrofe din
-              județul <strong>Maramureș</strong>.
+              <strong>Gradina ZAK</strong> este o firmă cu experiență
+              îndelungată în domeniul amenajării și întreținerii spațiilor
+              verzi. Cu o echipă de specialiști dedicați, oferim servicii
+              complete de <strong>peisagistică în Baia Mare</strong> și zonele
+              limitrofe din județul <strong>Maramureș</strong>.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Fiecare proiect de <strong>amenajare grădină</strong> este abordat
-              cu atenție la detalii și profesionalism, asigurându-ne că rezultatul
-              final depășește așteptările clienților noștri.
+              cu atenție la detalii și profesionalism, asigurându-ne că
+              rezultatul final depășește așteptările clienților noștri.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -194,12 +202,14 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Serviciile Noastre de Amenajare și Întreținere Grădini în Maramureș
+              Serviciile Noastre de Amenajare și Întreținere Grădini în
+              Maramureș
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Descoperiți gama completă de servicii profesionale de{" "}
               <strong>
-                peisagistică și întreținere spații verzi în Baia Mare și Maramureș
+                peisagistică și întreținere spații verzi în Baia Mare și
+                Maramureș
               </strong>
               . Oferim soluții complete pentru toate nevoile dumneavoastră de
               amenajare grădini.
@@ -217,7 +227,9 @@ export default function Home() {
                   <i className={`${s.icon} text-secondary text-xl`}></i>
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {s.desc}
+                </p>
               </div>
             ))}
           </div>
