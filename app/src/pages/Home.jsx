@@ -76,9 +76,9 @@ export default function Home() {
           </h1>
 
           <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
-            Transformăm spațiile verzi din Maramureș în adevărate opere de artă
-            peisagistică prin servicii profesionale de amenajare și întreținere
-            grădini în Baia Mare și împrejurimi
+            Transformăm spațiile verzi în adevărate opere de artă peisagistică
+            prin servicii profesionale de amenajare și întreținere grădini în
+            Baia Mare și împrejurimi
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
@@ -143,7 +143,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5">
               Peste 25 de Ani de{" "}
               <span className="text-secondary">Experiență în</span> Amenajare
-              Grădini Maramureș
+              Grădini
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
               <strong>Gradina ZAK</strong> este o firmă cu experiență
@@ -202,8 +202,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Serviciile Noastre de Amenajare și Întreținere Grădini în
-              Maramureș
+              Serviciile Noastre de Amenajare și Întreținere Grădini
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Descoperiți gama completă de servicii profesionale de{" "}
