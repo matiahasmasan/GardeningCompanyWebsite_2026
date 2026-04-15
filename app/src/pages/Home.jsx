@@ -59,7 +59,7 @@ export default function Home() {
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/gradina1-1920.webp')" }}
+          style={{ backgroundImage: "url('/images/gradina1.webp')" }}
         />
         <div className="absolute inset-0 bg-dark/70" />
 
