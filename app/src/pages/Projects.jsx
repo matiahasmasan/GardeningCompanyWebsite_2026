@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollIndicator from "../components/ScrollIndicator";
+import Lightbox from "../components/Lightbox";
 import { Link } from "react-router-dom";
 
 const categories = [
@@ -209,12 +210,11 @@ const projects = [
 
 export default function Projects() {
   const [active, setActive] = useState("toate");
+  const [lightboxIndex, setLightboxIndex] = useState(null);
 
   const filtered =
     active === "toate" ? projects : projects.filter((p) => p.cat === active);
 
-  // MODAL CARE DESCHIDE POZELE
-  // TOOGLE LA REZOLUITII POZE
   return (
     <div className="w-full">
       {/* ── HERO ── */}
@@ -307,7 +307,8 @@ export default function Projects() {
               return (
                 <div
                   key={i}
-                  className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow bg-white"
+                  className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow bg-white cursor-pointer"
+                  onClick={() => setLightboxIndex(i)}
                 >
                   <div className="relative">
                     <img
@@ -375,6 +376,16 @@ export default function Projects() {
       </section>
 
       <Footer />
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          items={filtered}
+          index={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+          onPrev={() => setLightboxIndex((lightboxIndex - 1 + filtered.length) % filtered.length)}
+          onNext={() => setLightboxIndex((lightboxIndex + 1) % filtered.length)}
+        />
+      )}
     </div>
   );
 }
