@@ -66,16 +66,16 @@ export default function Home() {
         <Navbar />
 
         <div className="relative z-10 max-w-3xl mx-auto px-6 flex flex-col items-center">
-          <span className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
+          <span className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 animate-hero-badge">
             <i className="fas fa-award text-accent"></i>
             Peste 25 de ani de experiență
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-hero-title">
             Gradina <span className="text-accent">ZAK</span>
           </h1>
 
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
+          <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-8 animate-hero-desc">
             Transformăm spațiile verzi în adevărate opere de artă peisagistică
             prin servicii profesionale de amenajare și întreținere grădini în
             Baia Mare și împrejurimi

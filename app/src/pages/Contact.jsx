@@ -201,7 +201,7 @@ export default function Contact() {
             <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-200 h-72">
               <iframe
                 title="Locatie Gradina Zak"
-                src="https://maps.google.com/maps?q=strada%20dealul%20grosului%20nr%2016%20baia%20mare&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=gradina%20zakcd &t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
