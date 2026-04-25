@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -13,12 +14,15 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/proiecte" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <>
+      <SpeedInsights />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/proiecte" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
 
