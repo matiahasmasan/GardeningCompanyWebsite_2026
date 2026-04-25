@@ -47,9 +47,9 @@ const services = [
 ];
 
 const aboutImages = [
-  { src: "/images/intretinere1.webp", alt: "Proiect amenajare grădină" },
-  { src: "/images/toaletare1.webp", alt: "Amenajare peisagistică" },
-  { src: "/images/gradina3-1200.webp", alt: "Grădină cu palmieri" },
+  { src: "/images/intretinere1-low.webp", alt: "Proiect amenajare grădină" },
+  { src: "/images/toaletare1-low.webp", alt: "Amenajare peisagistică" },
+  { src: "/images/gradina3-low.webp", alt: "Grădină cu palmieri" },
 ];
 
 export default function Home() {
@@ -65,7 +65,7 @@ export default function Home() {
 
         <Navbar />
 
-        <div className="relative z-10 max-w-3xl mx-auto px-6 flex flex-col items-center">
+        <div className="relative z-10 max-w-3xl mt-4 mx-auto px-6 flex flex-col items-center">
           <span className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 animate-hero-badge">
             <i className="fas fa-award text-accent"></i>
             Peste 25 de ani de experiență
