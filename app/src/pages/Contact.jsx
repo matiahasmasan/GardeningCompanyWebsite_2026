@@ -16,16 +16,16 @@ export default function Contact() {
         <Navbar />
 
         <div className="relative z-10 max-w-3xl mx-auto px-6 flex flex-col items-center">
-          <span className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
+          <span className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 animate-hero-badge">
             <i className="fas fa-phone text-accent"></i>
             Contactează-ne
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-hero-title">
             Să Creăm <span className="text-accent">Împreună</span>
           </h1>
 
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
+          <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-12 animate-hero-desc">
             Transformă-ți visul în realitate cu ajutorul experților noștri în
             peisagistică. Consultație gratuită și deviz personalizat.
           </p>
