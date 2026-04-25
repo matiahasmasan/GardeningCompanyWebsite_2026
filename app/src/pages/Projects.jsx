@@ -382,7 +382,11 @@ export default function Projects() {
           items={filtered}
           index={lightboxIndex}
           onClose={() => setLightboxIndex(null)}
-          onPrev={() => setLightboxIndex((lightboxIndex - 1 + filtered.length) % filtered.length)}
+          onPrev={() =>
+            setLightboxIndex(
+              (lightboxIndex - 1 + filtered.length) % filtered.length,
+            )
+          }
           onNext={() => setLightboxIndex((lightboxIndex + 1) % filtered.length)}
         />
       )}
