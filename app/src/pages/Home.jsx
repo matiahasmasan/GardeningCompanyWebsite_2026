@@ -48,8 +48,8 @@ const services = [
 
 const aboutImages = [
   { src: "/images/intretinere1.webp", alt: "Proiect amenajare grădină" },
-  { src: "/images/toaletare1.webp", alt: "Grădină cu palmieri" },
-  { src: "/images/gradina3-1200.webp", alt: "Amenajare peisagistică" },
+  { src: "/images/toaletare1.webp", alt: "Amenajare peisagistică" },
+  { src: "/images/gradina3-1200.webp", alt: "Grădină cu palmieri" },
 ];
 
 export default function Home() {
