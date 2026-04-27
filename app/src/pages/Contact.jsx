@@ -15,6 +15,8 @@ export default function Contact() {
           content="Contactează-ne pentru o consultație gratuită și deviz personalizat pentru grădina ta. Suntem disponibili în Baia Mare și tot județul Maramureș."
         />
         <meta property="og:title" content="Contactează Echipa Grădina ZAK" />
+        <meta property="og:image" content="/images/pool1.webp" />
+        <link rel="canonical" href="https://gradinazak.ro/contact" />
       </Helmet>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">

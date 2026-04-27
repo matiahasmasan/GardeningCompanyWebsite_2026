@@ -229,6 +229,7 @@ export default function Projects() {
           content="Proiecte de Excepție - Grădina ZAK"
         />
         <meta property="og:image" content="/images/pool2.webp" />
+        <link rel="canonical" href="https://gradinazak.ro/proiecte" />
       </Helmet>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
