@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollIndicator from "../components/ScrollIndicator";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -55,6 +56,19 @@ const aboutImages = [
 export default function Home() {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Grădina ZAK | Amenajare Grădini & Peisagistică Baia Mare</title>
+        <meta
+          name="description"
+          content="Peste 25 de ani de experiență în amenajare grădini, sisteme de irigații și întreținere spații verzi în Baia Mare și Maramureș."
+        />
+        <meta
+          property="og:title"
+          content="Grădina ZAK - Transformăm spațiul tău verde"
+        />
+        <meta property="og:image" content="/images/gradina1.webp" />
+        <link rel="canonical" href="https://gradinazak.ro/" />
+      </Helmet>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
         <div

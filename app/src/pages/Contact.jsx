@@ -1,10 +1,21 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollIndicator from "../components/ScrollIndicator";
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>
+          Contact Grădina ZAK | Consultanță Amenajare Grădină Baia Mare
+        </title>
+        <meta
+          name="description"
+          content="Contactează-ne pentru o consultație gratuită și deviz personalizat pentru grădina ta. Suntem disponibili în Baia Mare și tot județul Maramureș."
+        />
+        <meta property="og:title" content="Contactează Echipa Grădina ZAK" />
+      </Helmet>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
         <div

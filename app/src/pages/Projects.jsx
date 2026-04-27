@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import ScrollIndicator from "../components/ScrollIndicator";
 import Lightbox from "../components/Lightbox";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const categories = [
   { id: "toate", label: "Toate Proiectele", icon: "fas fa-th-large" },
@@ -217,6 +218,18 @@ export default function Projects() {
 
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Portofoliu Amenajări Grădini | Grădina ZAK Baia Mare</title>
+        <meta
+          name="description"
+          content="Vezi proiectele noastre de amenajare grădini, gazon rulou și sisteme de irigații realizate în Baia Mare, Satu Mare și Maramureș."
+        />
+        <meta
+          property="og:title"
+          content="Proiecte de Excepție - Grădina ZAK"
+        />
+        <meta property="og:image" content="/images/pool2.webp" />
+      </Helmet>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
         <div
