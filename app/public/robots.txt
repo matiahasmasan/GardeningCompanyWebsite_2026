@@ -1,12 +1,8 @@
-# Robots.txt for Grădina ZAK
-# Allows search engines to crawl and index the site
-
 User-agent: *
 Allow: /
 Allow: /images/
 Allow: /src/
 
-# Disallow crawling of unnecessary files
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /.vscode/
@@ -14,12 +10,6 @@ Disallow: /dist/
 Disallow: /*.json
 Disallow: /*.config.js
 
-# Sitemap location
 Sitemap: https://gradinazak.ro/sitemap.xml
 
-# Crawl delay (delay in seconds between requests)
-# Optional: uncomment if you want to limit crawl rate
-# Crawl-delay: 1
-
-# Request timeout
 Request-timeout: 30
