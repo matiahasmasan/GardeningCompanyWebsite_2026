@@ -72,25 +72,47 @@
         },
         "areaServed": ["Baia Mare", "Satu Mare", "Maramureș"],
         "image": "https://gradinazak.ro/images/gradina1.webp",
-        "priceRange": "$$",
-        "service": [
-          {
-            "@type": "Service",
-            "name": "Amenajare Grădini",
-            "description": "Proiectare peisagistică și crearea de spații verzi moderne"
-          },
-          {
-            "@type": "Service",
-            "name": "Sisteme de Irigații",
-            "description": "Montaj și întreținere de sisteme automate de udare"
-          },
-          {
-            "@type": "Service",
-            "name": "Toaletare Copaci",
-            "description": "Îngrijire profesională pentru copaci și arbuști ornamentali"
-          }
-        ]
+        "priceRange": "$$"
       }
+    </script>
+
+    <!-- Services Schema -->
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Amenajare Grădini",
+          "description": "Proiectare peisagistică și crearea de spații verzi moderne și funcționale",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Grădina ZAK"
+          },
+          "areaServed": ["Baia Mare", "Satu Mare", "Maramureș"]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Sisteme de Irigații",
+          "description": "Montaj și întreținere de sisteme automate de udare pentru grădini",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Grădina ZAK"
+          },
+          "areaServed": ["Baia Mare", "Satu Mare", "Maramureș"]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Toaletare Copaci",
+          "description": "Îngrijire profesională pentru copaci și arbuști ornamentali",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Grădina ZAK"
+          },
+          "areaServed": ["Baia Mare", "Satu Mare", "Maramureș"]
+        }
+      ]
     </script>
 
     <link
