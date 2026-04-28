@@ -171,7 +171,7 @@ export default function Home() {
               cu atenție la detalii și profesionalism, asigurându-ne că
               rezultatul final depășește așteptările clienților noștri.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 items-center justify-center">
               <a
                 href="tel:0766431164"
                 className="flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-full hover:bg-dark transition-colors"

@@ -19,12 +19,20 @@ export default function CookieConsent() {
   const handleAcceptAll = () => {
     localStorage.setItem("cookieConsent", "accepted");
     setShowBanner(false);
-    // Here you would load GA4 and other cookies
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag("consent", "update", { analytics_storage: "granted" });
+
+    window.dispatchEvent(new Event("cookieConsentChanged"));
   };
 
   const handleRejectAll = () => {
     localStorage.setItem("cookieConsent", "rejected");
     setShowBanner(false);
+    window.dispatchEvent(new Event("cookieConsentChanged"));
   };
 
   if (!showBanner) return null;

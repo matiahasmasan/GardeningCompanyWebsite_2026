@@ -1,9 +1,26 @@
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollIndicator from "../components/ScrollIndicator";
 import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
+  const [showMap, setShowMap] = useState(
+    localStorage.getItem("cookieConsent") === "accepted",
+  );
+
+  useEffect(() => {
+    const handleConsentChange = () => {
+      setShowMap(localStorage.getItem("cookieConsent") === "accepted");
+    };
+
+    window.addEventListener("cookieConsentChanged", handleConsentChange);
+
+    return () => {
+      window.removeEventListener("cookieConsentChanged", handleConsentChange);
+    };
+  }, []);
+
   return (
     <div className="w-full">
       <Helmet>
@@ -212,16 +229,28 @@ export default function Contact() {
               Locația pe Hartă
             </h2>
             <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-200 h-72">
-              <iframe
-                title="Locatie Gradina Zak"
-                src="https://maps.google.com/maps?q=gradina%20zakcd &t=&z=15&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              {showMap ? (
+                <iframe
+                  title="Locatie Gradina Zak"
+                  src="https://maps.google.com/maps?q=gradina%20zak&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              ) : (
+                <div className="w-full h-full bg-gray-100 flex flex-col items-center justify-center text-center p-4">
+                  <p className="text-gray-600">
+                    Harta Google este dezactivată.
+                  </p>
+                  <p className="text-sm text-gray-500 mt-2">
+                    Pentru a o vizualiza, vă rugăm să acceptați cookie-urile din
+                    banner-ul de consimțământ.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/escavator1.webp')" }}
+          style={{ backgroundImage: "url('/images/rulouri2.webp')" }}
         />
         <div className="absolute inset-0 bg-dark/70" />
 
@@ -83,19 +83,7 @@ export default function PrivacyPolicy() {
               2. Ce Date Colectăm
             </h2>
             <div className="space-y-4">
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-6">
-                <h3 className="font-bold text-gray-900 mb-2">
-                  📝 Date de Contact (Formular)
-                </h3>
-                <ul className="text-gray-700 space-y-1 ml-4 list-disc">
-                  <li>Nume</li>
-                  <li>Email</li>
-                  <li>Număr de telefon</li>
-                  <li>Mesajul dumneavoastră</li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-6">
+              <div className="bg-green-50 border-l-4 border-green-500 p-6">
                 <h3 className="font-bold text-gray-900 mb-2">
                   📊 Date Automate (Google Analytics)
                 </h3>
@@ -107,7 +95,7 @@ export default function PrivacyPolicy() {
                 </ul>
               </div>
 
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-6">
+              <div className="bg-green-50 border-l-4 border-green-500 p-6">
                 <h3 className="font-bold text-gray-900 mb-2">
                   🗺️ Date din Google Maps
                 </h3>

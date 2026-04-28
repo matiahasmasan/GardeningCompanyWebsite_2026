@@ -16,6 +16,19 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  useEffect(() => {
+    // On initial load, check if consent was already given
+    if (localStorage.getItem("cookieConsent") === "accepted") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("consent", "update", {
+        analytics_storage: "granted",
+      });
+    }
+  }, []);
+
   return (
     <>
       <SpeedInsights />
@@ -27,6 +40,7 @@ function App() {
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <CookieConsent />
     </>
   );
 }
