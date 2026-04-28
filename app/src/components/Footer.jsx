@@ -31,7 +31,7 @@ export default function Footer() {
               <i className="fab fa-facebook"></i>
               <span>Facebook</span>
             </a>
-            <div className="mt-4 space-y-1">
+            <div className="mt-4 space-y-4">
               <Link
                 to="/privacy-policy"
                 className="block text-white/70 hover:text-white text-xs transition-colors"
