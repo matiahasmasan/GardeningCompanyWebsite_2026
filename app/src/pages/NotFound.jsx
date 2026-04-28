@@ -5,10 +5,6 @@ import Footer from "../components/Footer";
 export default function NotFound() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Pagina Negăsită | Grădina ZAK</title>
-        <meta name="robots" content="noindex, follow" />
-      </Helmet>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
         <div

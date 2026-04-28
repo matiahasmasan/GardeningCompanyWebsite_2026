@@ -39,13 +39,13 @@ export default function Footer() {
                 Setări Cookie-uri
               </Link>
               <Link
-                to="/politica-confidentialitate"
+                to="/privacy-policy"
                 className="block text-white/40 hover:text-white/70 text-xs transition-colors"
               >
                 Politica de Confidențialitate
               </Link>
               <Link
-                to="/politica-cookie"
+                to="/cookie-policy"
                 className="block text-white/40 hover:text-white/70 text-xs transition-colors"
               >
                 Politica Cookie-uri
@@ -154,14 +154,14 @@ export default function Footer() {
           <span>© 2026 Gradina Zak SRL. Toate drepturile rezervate.</span>
           <div className="flex items-center gap-4">
             <Link
-              to="/politica-confidentialitate"
+              to="/privacy-policy"
               className="hover:text-white/60 transition-colors"
             >
               Politica de Confidențialitate
             </Link>
             <span>|</span>
             <Link
-              to="/politica-cookie"
+              to="/cookie-policy"
               className="hover:text-white/60 transition-colors"
             >
               Politica Cookie-uri

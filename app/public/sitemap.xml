@@ -23,4 +23,20 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Cookie Policy Page -->
+  <url>
+    <loc>https://gradinazak.ro/cookie-policy</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://gradinazak.ro/privacy-policy</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
