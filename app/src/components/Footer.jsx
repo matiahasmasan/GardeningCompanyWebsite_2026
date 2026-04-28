@@ -18,7 +18,7 @@ export default function Footer() {
               />
               <span className="font-bold text-lg">Gradina Zak</span>
             </div>
-            <p className="text-white/60 text-sm leading-relaxed mb-4">
+            <p className="text-white/80 text-sm leading-relaxed mb-4">
               Creăm spații verzi extraordinare cu peste 25 de ani de experiență
               în peisagistică și întreținere grădini în Maramureș.
             </p>
@@ -26,27 +26,21 @@ export default function Footer() {
               href="https://facebook.com/gradinazak"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm"
+              className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
             >
               <i className="fab fa-facebook"></i>
               <span>Facebook</span>
             </a>
             <div className="mt-4 space-y-1">
               <Link
-                to="/setari-cookie"
-                className="block text-white/40 hover:text-white/70 text-xs transition-colors"
-              >
-                Setări Cookie-uri
-              </Link>
-              <Link
                 to="/privacy-policy"
-                className="block text-white/40 hover:text-white/70 text-xs transition-colors"
+                className="block text-white/70 hover:text-white text-xs transition-colors"
               >
                 Politica de Confidențialitate
               </Link>
               <Link
                 to="/cookie-policy"
-                className="block text-white/40 hover:text-white/70 text-xs transition-colors"
+                className="block text-white/70 hover:text-white text-xs transition-colors"
               >
                 Politica Cookie-uri
               </Link>
@@ -55,10 +49,10 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-wider text-white/50 mb-4">
+            <p className="font-semibold text-sm uppercase tracking-wider text-white/70 mb-4">
               Servicii Principale
-            </h4>
-            <ul className="space-y-2 text-sm text-white/70">
+            </p>
+            <ul className="space-y-2 text-sm text-white/80">
               <li>
                 <Link
                   to="/proiecte"
@@ -112,12 +106,12 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-wider text-white/50 mb-4">
+            <p className="font-semibold text-sm uppercase tracking-wider text-white/70 mb-4">
               Contact
-            </h4>
-            <ul className="space-y-3 text-sm text-white/70">
+            </p>
+            <ul className="space-y-3 text-sm text-white/80">
               <li className="flex items-start gap-3">
-                <i className="fas fa-map-marker-alt mt-0.5 text-white/40"></i>
+                <i className="fas fa-map-marker-alt mt-0.5 text-white/60"></i>
                 <span>
                   Strada Dealului Grosului nr.16
                   <br />
@@ -125,7 +119,7 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <i className="fas fa-phone text-white/40"></i>
+                <i className="fas fa-phone text-white/60"></i>
                 <a
                   href="tel:0766431164"
                   className="hover:text-white transition-colors"
@@ -134,7 +128,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <i className="fas fa-envelope text-white/40"></i>
+                <i className="fas fa-envelope text-white/60"></i>
                 <a
                   href="mailto:gradinazak@gmail.com"
                   className="hover:text-white transition-colors"
@@ -143,26 +137,26 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <i className="fas fa-clock text-white/40"></i>
+                <i className="fas fa-clock text-white/60"></i>
                 <span>Luni - Vineri: 8:00 - 18:00</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/30">
+        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/70">
           <span>© 2026 Gradina Zak SRL. Toate drepturile rezervate.</span>
           <div className="flex items-center gap-4">
             <Link
               to="/privacy-policy"
-              className="hover:text-white/60 transition-colors"
+              className="hover:text-white transition-colors"
             >
               Politica de Confidențialitate
             </Link>
             <span>|</span>
             <Link
               to="/cookie-policy"
-              className="hover:text-white/60 transition-colors"
+              className="hover:text-white transition-colors"
             >
               Politica Cookie-uri
             </Link>
