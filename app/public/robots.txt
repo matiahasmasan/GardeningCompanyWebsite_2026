@@ -11,5 +11,3 @@ Disallow: /*.json
 Disallow: /*.config.js
 
 Sitemap: https://gardening-company-website-2026.vercel.app/sitemap.xml
-
-Request-timeout: 30
