@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -32,6 +33,7 @@ function App() {
   return (
     <>
       <SpeedInsights />
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/proiecte" element={<Projects />} />
