@@ -70,13 +70,13 @@ export default function CookieConsent() {
                 onClick={handleRejectAll}
                 className="px-6 py-2.5 border-2 border-gray-300 text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors text-sm whitespace-nowrap"
               >
-                ❌ Refuz
+                Refuz
               </button>
               <button
                 onClick={handleAcceptAll}
                 className="px-6 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-sm whitespace-nowrap"
               >
-                ✅ Accept Toate
+                Accept Toate
               </button>
             </div>
           </div>

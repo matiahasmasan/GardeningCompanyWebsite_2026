@@ -101,7 +101,7 @@ export default function Home() {
               className="flex items-center gap-2 bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-light transition-colors"
             >
               <i className="fas fa-seedling"></i>
-              Solicită Deviz Gratuit
+              Solicită Deviz
             </Link>
             <a
               href="tel:0766431164"
@@ -268,7 +268,7 @@ export default function Home() {
           <p className="text-white/80 text-lg mb-8 leading-relaxed">
             Contactează-ne astăzi pentru o{" "}
             <strong className="text-white">
-              consultație gratuită de amenajare grădină
+              consultație de amenajare grădină
             </strong>{" "}
             și să discutăm despre visul tău de grădină perfectă
           </p>
@@ -278,7 +278,7 @@ export default function Home() {
               className="flex items-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-primary transition-colors"
             >
               <i className="fas fa-seedling"></i>
-              Solicită Deviz Gratuit
+              Solicită Deviz
             </Link>
             <a
               href="tel:0766431164"

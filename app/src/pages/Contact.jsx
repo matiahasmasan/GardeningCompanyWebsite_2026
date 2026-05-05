@@ -29,7 +29,7 @@ export default function Contact() {
         </title>
         <meta
           name="description"
-          content="Contactează-ne pentru o consultație gratuită și deviz personalizat pentru grădina ta. Suntem disponibili în Baia Mare și tot județul Maramureș."
+          content="Contactează-ne pentru o consultație și deviz personalizat pentru grădina ta. Suntem disponibili în Baia Mare și tot județul Maramureș."
         />
         <meta property="og:title" content="Contactează Echipa Grădina ZAK" />
         <meta property="og:image" content="/images/pool1.webp" />
@@ -57,13 +57,17 @@ export default function Contact() {
 
           <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-12 animate-hero-desc">
             Transformă-ți visul în realitate cu ajutorul experților noștri în
-            peisagistică. Consultație gratuită și deviz personalizat.
+            peisagistică. Consultație și deviz personalizat.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-10 text-center">
             {[
               { icon: "fas fa-phone", value: "24/7", label: "Disponibilitate" },
-              { icon: "fas fa-gift", value: "Consultație", label: "Gratuită" },
+              {
+                icon: "fas fa-gift",
+                value: "Consultație",
+                label: "Personalizata",
+              },
               { icon: "fas fa-bolt", value: "Răspuns", label: "Rapid" },
             ].map(({ icon, value, label }) => (
               <div key={label} className="flex items-center gap-3">
@@ -309,8 +313,8 @@ export default function Contact() {
             Gata să Începem?
           </h2>
           <p className="text-white/80 text-lg mb-8 leading-relaxed">
-            Contactează-ne astăzi pentru o consultație gratuită și să discutăm
-            despre visul tău de grădină
+            Contactează-ne astăzi pentru o consultație și să discutăm despre
+            visul tău de grădină
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
