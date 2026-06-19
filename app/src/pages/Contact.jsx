@@ -210,18 +210,39 @@ export default function Contact() {
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
-                  <i className="fab fa-facebook text-gray-600"></i>
+                  <i className="fas fa-hashtag text-gray-600"></i>
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Social Media</p>
-                  <a
-                    href="https://facebook.com/gradinazak"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary text-sm hover:underline"
-                  >
-                    Facebook: @gradinazak
-                  </a>
+                  <div className="flex gap-3 mt-3">
+                    <a
+                      href="https://facebook.com/gradinazak"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                      title="Facebook"
+                    >
+                      <i className="fab fa-facebook-f text-xs"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/gradina_zak?igsh=dW1lcHFkM2gwZHZx"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                      title="Instagram"
+                    >
+                      <i className="fab fa-instagram text-xs"></i>
+                    </a>
+                    <a
+                      href="https://www.tiktok.com/@gradina.zak"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                      title="TikTok"
+                    >
+                      <i className="fab fa-tiktok text-xs"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

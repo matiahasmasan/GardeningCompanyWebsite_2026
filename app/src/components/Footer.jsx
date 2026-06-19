@@ -26,10 +26,28 @@ export default function Footer() {
               href="https://facebook.com/gradinazak"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
+              className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm mb-2"
             >
               <i className="fab fa-facebook"></i>
               <span>Facebook</span>
+            </a>
+            <a
+              href="https://www.instagram.com/gradina_zak?igsh=dW1lcHFkM2gwZHZx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm mb-2"
+            >
+              <i className="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@gradina.zak"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
+            >
+              <i className="fab fa-tiktok"></i>
+              <span>TikTok</span>
             </a>
             <div className="mt-4 space-y-4">
               <Link
